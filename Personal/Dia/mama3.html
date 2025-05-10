@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mensaje</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 3rem;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f0f0f, #1c1c1c);
+      color: #e0e0e0;
+      animation: mostrar 1.2s ease-in;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      background-color: rgba(40, 40, 40, 0.9);
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 2;
+      text-align: justify;
+      white-space: pre-line;
+    }
+    @keyframes mostrar {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+  <script>
+    const acceso = sessionStorage.getItem("autenticado");
+    if (!acceso) {
+      alert("Acceso no autorizado. Redirigiendo...");
+      window.location.href = "../../index.html";
+    }
+  </script>
+</head>
+<body>
+  <main>
+    <p>Aqui va el mensaje que le quieran decir a su mama o tias, madrinas, madrastras, etc.</p>
+  </main>
+</body>
+</html>

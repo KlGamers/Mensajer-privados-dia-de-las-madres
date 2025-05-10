@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cargando...</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to right, #0f0f0f, #1c1c1c);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .loader {
+      font-size: 1.4rem;
+      color: #e0e0e0;
+      letter-spacing: 1px;
+    }
+
+    .puntos::after {
+      content: '';
+      display: inline-block;
+      width: 1em;
+      animation: puntos 1.2s steps(3, end) infinite;
+    }
+
+    @keyframes puntos {
+      0%   { content: ''; }
+      33%  { content: '.'; }
+      66%  { content: '..'; }
+      100% { content: '...'; }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader">
+    Cargando<span class="puntos"></span>
+  </div>
+</body>
+</html>

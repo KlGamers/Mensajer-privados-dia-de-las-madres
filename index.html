@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceso al Mensaje</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="particles-js"></div>
+  <div class="form-box">
+    <h2>Ingresa para ver tu mensaje</h2>
+    <form onsubmit="return validarAcceso(event)">
+      <input type="text" id="nombre" placeholder="Tu nombre" required>
+      <input type="password" id="clave" placeholder="Contraseña" required>
+      <button type="submit">Acceder</button>
+    </form>
+    <p id="error" style="color: #ff8fa3;"></p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+  <script src="script.js"> </script>
+</body>
+</html>

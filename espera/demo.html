@@ -1,0 +1,8 @@
+<!DOCTYPE html><html><head>
+<script>
+  const accesoPermitido = sessionStorage.getItem("autenticado");
+  if (!accesoPermitido) {
+    alert("Acceso no autorizado. Redirigiendo al inicio...");
+    window.location.href = "../index.html";
+  }
+</script><meta charset='UTF-8'><title>Espera</title></head><body>Temporizador</body></html>

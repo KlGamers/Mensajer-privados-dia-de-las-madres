@@ -1,0 +1,51 @@
+body {
+      background: linear-gradient(135deg, #101010, #1c1c1c);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .form-box {
+      background: rgba(40, 40, 40, 0.95);
+      padding: 2rem 3rem;
+      border-radius: 16px;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+      text-align: center;
+      z-index: 1;
+    }
+    input {
+      display: block;
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      background-color: #222;
+      color: white;
+    }
+    button {
+      padding: 0.7rem 2rem;
+      border: none;
+      background-color: #5e60ce;
+      color: white;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #6930c3;
+    }
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      top: 0;
+      left: 0;
+    }
